@@ -31,7 +31,7 @@ const typeDefs = gql`
     # if false, booking trips failed -- check errors
     bookTrips(launchIds: [ID]!): TripUpdateResponse!
     # if false, cancellation trips failed -- check errors
-    cancelTrips(launchId: ID!): TripUpdateResponse!
+    cancelTrip(launchId: ID!): TripUpdateResponse!
 
     login(email: String): String # login token
   }
